@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zivo | Global Communication Platform</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
@@ -54,7 +54,6 @@ header{
   border:none;
   border-radius:30px;
   font-weight:700;
-  cursor:pointer;
 }
 
 /* HERO */
@@ -62,8 +61,9 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:140px 8%;
+  padding:150px 8% 100px;
   flex-wrap:wrap;
+  gap:60px;
 }
 
 .hero-text{
@@ -91,9 +91,15 @@ header{
   line-height:1.7;
 }
 
-.hero img{
-  width:280px;
+/* IMAGE FIX */
+.hero-image{
+  text-align:center;
+}
+
+.hero-image img{
+  width:260px;
   border-radius:30px;
+  margin-top:30px; /* 🔥 FIX SPACE */
   animation:float 4s infinite alternate;
 }
 
@@ -102,21 +108,22 @@ header{
   to{transform:translateY(-20px);}
 }
 
-/* PROFILE INFO */
-.profile-box{
-  margin-top:15px;
-  text-align:center;
-}
-
+/* 🔥 FOUNDER PREMIUM */
 .profile-name{
-  font-size:20px;
-  font-weight:700;
+  margin-top:20px;
+  font-size:26px;
+  font-weight:800;
   color:#00ffc3;
+  text-shadow:
+    0 0 10px #00ffc3,
+    0 0 20px #00ffc3,
+    0 0 40px rgba(0,255,195,0.6);
 }
 
 .profile-role{
   font-size:14px;
   color:#aaa;
+  margin-top:5px;
 }
 
 /* SECTION */
@@ -137,16 +144,16 @@ header{
   border-radius:20px;
 }
 
-/* 📱 SLIDER */
+/* 📱 AUTO SLIDER ONLY (NO SCROLL BAR) */
 .slider{
   display:flex;
   gap:25px;
   justify-content:center;
-  animation:slide 10s infinite linear;
+  animation:slide 12s linear infinite;
 }
 
 .phone{
-  width:220px;
+  width:240px;
   background:#000;
   border-radius:25px;
   padding:8px;
@@ -159,7 +166,7 @@ header{
 
 @keyframes slide{
   0%{transform:translateX(0);}
-  100%{transform:translateX(-60px);}
+  100%{transform:translateX(-100px);}
 }
 
 /* FOOTER */
@@ -173,6 +180,14 @@ footer{
 @media(max-width:768px){
   .hero{
     text-align:center;
+  }
+
+  .hero-image img{
+    width:220px;
+  }
+
+  .phone{
+    width:180px;
   }
 }
 </style>
@@ -193,28 +208,21 @@ footer{
     <div class="tagline">GLOBAL • REAL-TIME • SOCIAL 🌍</div>
 
     <p>
-      Zivo is a fast-growing global platform where people connect through real-time
-      audio and video communication. Discover new friendships, explore cultures,
-      and experience modern digital interaction in a safe and trusted environment.
+      Zivo is a fast-growing global platform connecting people through real-time
+      audio and video communication. Build meaningful connections worldwide.
     </p>
 
     <p>
-      Built for users worldwide, Zivo delivers seamless communication and meaningful
-      connections anytime, anywhere.
+      Designed for modern users, Zivo delivers secure and seamless communication
+      anytime, anywhere.
     </p>
-
-    <br>
-    <button class="btn">Download App</button>
   </div>
 
-  <div>
+  <div class="hero-image">
     <img src="profile.png.jpeg">
 
-    <!-- 🔥 FOUNDER SECTION -->
-    <div class="profile-box">
-      <div class="profile-name">Pavankalyan Bhukya</div>
-      <div class="profile-role">Founder & CEO, Zivo</div>
-    </div>
+    <div class="profile-name">Pavankalyan Bhukya</div>
+    <div class="profile-role">Founder & CEO, Zivo</div>
   </div>
 </section>
 
@@ -243,9 +251,8 @@ footer{
   <h2>Built for the World</h2>
 
   <p style="max-width:800px;margin:auto;color:#aaa;line-height:1.8;">
-    Zivo connects users across multiple countries with a scalable and secure platform.
-    Our mission is to become one of the leading global communication platforms,
-    empowering people to interact freely and build meaningful connections worldwide.
+    Zivo connects users globally with a secure and scalable communication platform,
+    enabling real-time interaction across borders.
   </p>
 </section>
 
@@ -256,7 +263,7 @@ footer{
 <footer>
   <p>ZivoApp – Global Communication Platform</p>
   <p>Email: zivo.support@gmail.com</p>
-  <p>© 2026 ZivoApp</p>
+  <p>© 2026 ZivoApp. All rights reserved.</p>
 </footer>
 
 <script>
