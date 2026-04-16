@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zivo | Global Communication Platform</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+  background: radial-gradient(circle at top,#0f172a,#020617);
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 8%;
+  position:fixed;
+  width:100%;
+  backdrop-filter:blur(20px);
+  z-index:1000;
+}
+
+.logo{
+  font-size:26px;
+  font-weight:800;
+  color:#00ffc3;
+}
+
+.btn{
+  background:linear-gradient(45deg,#00ffc3,#00bfff);
+  padding:10px 25px;
+  border:none;
+  border-radius:30px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 8%;
+  flex-wrap:wrap;
+}
+
+.left{
+  max-width:500px;
+}
+
+.left h1{
+  font-size:60px;
+  font-weight:800;
+  background:linear-gradient(#fff,#00ffc3);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.left p{
+  margin-top:15px;
+  color:#bbb;
+}
+
+.hero-btn{
+  margin-top:25px;
+}
+
+/* 3D IMAGE */
+.right img{
+  width:450px;
+  animation:float 4s ease-in-out infinite alternate;
+}
+
+@keyframes float{
+  from{transform:translateY(0);}
+  to{transform:translateY(-20px);}
+}
+
+/* SECTION */
+.section{
+  padding:100px 8%;
+  text-align:center;
+}
+
+.section h2{
+  font-size:40px;
+  margin-bottom:40px;
+}
+
+/* CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:30px;
+  border-radius:20px;
+  backdrop-filter:blur(15px);
+  border:1px solid rgba(255,255,255,0.1);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+/* GLOBAL SCROLL */
+.scroll{
+  margin-top:20px;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.scroll span{
+  display:inline-block;
+  animation:scroll 15s linear infinite;
+  color:#00ffc3;
+}
+
+@keyframes scroll{
+  from{transform:translateX(0);}
+  to{transform:translateX(-100%);}
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:60px;
+  background:#02030a;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">ZIVO</div>
+  <button class="btn">Download</button>
+</nav>
+
+<section class="hero">
+  <div class="left">
+    <h1>Connect Beyond Borders</h1>
+    <p>
+      Discover a new way to connect with people around the world through real-time
+      audio and video communication. Build friendships, explore cultures,
+      and enjoy meaningful interactions in a safe environment.
+    </p>
+
+    <div class="hero-btn">
+      <button class="btn">Start Now</button>
+    </div>
+  </div>
+
+  <div class="right">
+    <img src="https://cdn.dribbble.com/users/1615584/screenshots/16431457/media/6c8b08cfde13f75b1a4bb7a8a798edc8.png">
+  </div>
+</section>
+
+<section class="section">
+  <h2>Why Choose Zivo?</h2>
+
+  <div class="grid">
+    <div class="card">📞 High-quality audio & video calls</div>
+    <div class="card">🌍 Connect globally with new people</div>
+    <div class="card">🔐 Secure & encrypted communication</div>
+    <div class="card">⚡ Real-time seamless experience</div>
+    <div class="card">💎 Interactive digital engagement</div>
+    <div class="card">🛡️ Safe & moderated environment</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Global Community</h2>
+  <p style="color:#aaa; max-width:700px; margin:auto;">
+    Zivo connects people from different countries and cultures.
+    Our platform is designed to create a positive and engaging global
+    communication experience.
+  </p>
+
+  <div class="scroll">
+    <span>🇮🇳 India • 🇺🇸 USA • 🇬🇧 UK • 🇦🇪 UAE • 🇨🇦 Canada • 🇦🇺 Australia • 🇩🇪 Germany • 🇫🇷 France • 🌍 Global Users</span>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Security & Trust</h2>
+  <p style="color:#aaa; max-width:700px; margin:auto;">
+    We prioritize user safety with secure infrastructure and strong moderation systems.
+    Zivo ensures a trusted and respectful communication environment.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Leadership</h2>
+  <p style="color:#aaa; max-width:700px; margin:auto;">
+    Founded and led by <strong>Pavankalyan Bhukya</strong>, Zivo is built with a vision
+    to create a secure, global communication platform that connects people beyond boundaries.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Start Your Journey</h2>
+  <button class="btn">Download App</button>
+</section>
+
+<footer>
+  <p><strong>ZivoApp</strong> – Global Communication Platform</p>
+  <p>Email: zivo.support@gmail.com</p>
+  <p>Founder & CEO: Pavankalyan Bhukya</p>
+  <p style="color:#666; margin-top:10px;">© 2026 ZivoApp. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
