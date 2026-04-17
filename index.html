@@ -34,6 +34,7 @@ body{
 header{
   display:flex;
   justify-content:space-between;
+  align-items:center;
   padding:20px 8%;
   position:fixed;
   width:100%;
@@ -45,6 +46,13 @@ header{
   font-size:26px;
   font-weight:800;
   color:#00ffc3;
+}
+
+/* 🔥 NEW BADGE */
+.badge{
+  font-size:12px;
+  color:#00ffc3;
+  font-weight:600;
 }
 
 .btn{
@@ -99,7 +107,7 @@ header{
 .hero-image img{
   width:260px;
   border-radius:30px;
-  margin-top:30px; /* 🔥 FIX SPACE */
+  margin-top:30px;
   animation:float 4s infinite alternate;
 }
 
@@ -144,7 +152,7 @@ header{
   border-radius:20px;
 }
 
-/* 📱 AUTO SLIDER ONLY (NO SCROLL BAR) */
+/* 📱 AUTO SLIDER */
 .slider{
   display:flex;
   gap:25px;
@@ -175,21 +183,6 @@ footer{
   padding:60px;
   color:#aaa;
 }
-
-/* MOBILE */
-@media(max-width:768px){
-  .hero{
-    text-align:center;
-  }
-
-  .hero-image img{
-    width:220px;
-  }
-
-  .phone{
-    width:180px;
-  }
-}
 </style>
 </head>
 
@@ -198,26 +191,41 @@ footer{
 <div class="bubbles" id="bubbles"></div>
 
 <header>
-  <div class="logo">ZIVO</div>
-<a href="https://github.com/japalig2-lgtm/zivo-connect/releases/download/v1.0.0/app-release.apk?raw=true">
-  <button class="btn">📲 Download App</button>
-</a>
+  <div>
+    <div class="logo">ZIVO</div>
+    <div class="badge">India’s Fast Growing App 🇮🇳</div>
+  </div>
+
+  <a href="https://github.com/japalig2-lgtm/zivo-connect/releases/download/v1.0.0/app-release.apk?raw=true">
+    <button class="btn">📲 Download App</button>
+  </a>
 </header>
 
 <section class="hero">
   <div class="hero-text">
-    <h1>Meet New People</h1>
-    <div class="tagline">GLOBAL • REAL-TIME • SOCIAL 🌍</div>
+    <h1>Meet New People Worldwide</h1>
+    <div class="tagline">GLOBAL • REAL-TIME • SECURE 🌍</div>
 
     <p>
-      Zivo is a fast-growing global platform connecting people through real-time
-      audio and video communication. Build meaningful connections worldwide.
+      Zivo is one of India’s fastest growing social communication platforms,
+      connecting users globally through real-time audio and video experiences.
     </p>
 
     <p>
-      Designed for modern users, Zivo delivers secure and seamless communication
-      anytime, anywhere.
+      Built with modern technology, Zivo ensures a secure, private, and seamless
+      communication experience across multiple countries.
     </p>
+
+    <p style="color:#00ffc3;font-weight:600;">
+      ✔ Secure Platform • ✔ Privacy Focused • ✔ Global Access
+    </p>
+
+    <div style="margin-top:25px;">
+      <a href="https://github.com/japalig2-lgtm/zivo-connect/releases/download/v1.0.0/app-release.apk?raw=true" class="btn">
+        📲 Download for Android
+      </a>
+      <span style="margin-left:10px;color:#aaa;">iOS coming soon</span>
+    </div>
   </div>
 
   <div class="hero-image">
@@ -225,6 +233,11 @@ footer{
 
     <div class="profile-name">Pavankalyan Bhukya</div>
     <div class="profile-role">Founder & CEO, Zivo</div>
+
+    <p style="max-width:280px;margin:10px auto;color:#aaa;font-size:13px;">
+      Building a globally trusted communication platform focused on safety,
+      scalability, and real user experience.
+    </p>
   </div>
 </section>
 
@@ -234,8 +247,10 @@ footer{
   <div class="grid">
     <div class="card">🌍 Connect globally</div>
     <div class="card">📞 HD audio & video calls</div>
-    <div class="card">🔐 Safe & secure platform</div>
+    <div class="card">🔐 Secure communication</div>
     <div class="card">⚡ Real-time interaction</div>
+    <div class="card">🛡️ Privacy-first platform</div>
+    <div class="card">🚀 Built for scale</div>
   </div>
 </section>
 
@@ -250,11 +265,15 @@ footer{
 </section>
 
 <section class="section">
-  <h2>Built for the World</h2>
+  <h2>Trusted Global Platform</h2>
 
   <p style="max-width:800px;margin:auto;color:#aaa;line-height:1.8;">
-    Zivo connects users globally with a secure and scalable communication platform,
-    enabling real-time interaction across borders.
+    Zivo is a globally accessible platform connecting users across countries,
+    cultures, and communities with secure and scalable communication technology.
+  </p>
+
+  <p style="margin-top:15px;color:#00ffc3;">
+    🌍 Worldwide • 🔐 Secure • ⚡ Fast • 📱 Modern Experience
   </p>
 </section>
 
@@ -263,8 +282,10 @@ footer{
     <button class="btn">📲 Download App</button>
   </a>
 </section>
+
 <footer>
-  <p>ZivoApp – Global Communication Platform</p>
+  <p><strong>ZivoApp – Global Communication Platform</strong></p>
+  <p>India’s Fast Growing Social App 🇮🇳</p>
   <p>Email: zivo.support@gmail.com</p>
   <p>© 2026 ZivoApp. All rights reserved.</p>
 </footer>
